@@ -1,0 +1,60 @@
+.mui-content,body{
+	background-color: #fff;
+}
+.searchBox{
+	padding: 10px;
+	position: relative;
+	overflow: hidden;
+}
+.searchBox .searchBtn{
+	border: none;
+	outline-style: none;
+	width: 60px;
+	height: 28px;
+	background-color: #006699;
+	border-radius: 0;
+	position: absolute;
+	right: 10px;
+	top:10px;
+	text-align: center;
+}
+.searchBox .search{
+	float: left;
+	border: none;
+	outline-style: none;
+	width: 100%; 
+	padding-right: 60px;
+	height: 28px;
+	border:1px solid #006699;
+	border-radius: 0;
+	font-size: 14px;
+}
+.history{
+	height:24px;
+	line-height: 12px;
+	width: 100%;
+	border-bottom: 1px solid #ccc;
+	overflow: hidden;
+	font-size: 14px;
+	color:#ccc;
+	padding: 0 10px 25px 10px;
+}
+.history .searchHistory{
+	display: block;
+	float: left;
+}
+.history .clearHistory{
+	display: block;
+	float: right;
+}
+
+#historyBox li{
+	width: 100%;
+	height:50px;
+	border-bottom: 1px solid #ccc;
+}
+#historyBox a{
+	width: 100%;
+	display: block;
+	color:#000;
+}

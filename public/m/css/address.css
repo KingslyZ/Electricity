@@ -1,0 +1,19 @@
+body{
+	background-color: #fff;
+}
+.mui-content{
+	background-color: #fff;
+}
+.addAddress{
+	display: block;
+	width: 100%;
+	height:50px;
+	line-height: 50px;
+	text-align: center;
+	border-bottom: 1px solid #ccc;
+	color:#000;
+}
+.mui-content .mui-slider-handle a{
+	color:#000;
+	font-size: 14px;
+}

@@ -1,0 +1,82 @@
+body,.mui-content{
+	background-color: #fff;
+}
+#my-content{
+	position: absolute;
+	left:0;
+	top:40px;
+	bottom: 55px;
+	width: 100%;
+	overflow: hidden;
+}
+.priceBox{
+	font-size:14px; 
+	overflow: hidden;
+	height:40px;
+	line-height: 40px;
+	margin: 10px;
+	text-align: center;
+	width: 100%;
+}
+
+img{
+	vertical-align: top;
+}
+.priceBox .priceBtn{
+	float: left;
+	margin-left: 8px;
+	width: 100px;
+	background-color: #ddd;
+}
+.priceBox .saleBtn{
+	float: right;
+	margin-right: 30px;
+	width: 100px;
+	background-color: #ddd;
+}
+.product-list{
+	overflow: hidden;
+	padding: 10px;
+}
+.product-list li{
+	width: 48%;
+	float: left;
+	text-align: center;
+	padding: 5px;
+	box-shadow: 0 0 5px #ccc;
+	margin:0 5px 5px 0;
+}
+.product-list li #all{
+	width: 100%;
+	display: block;
+	
+	overflow: hidden;
+}
+.product-list li img{
+	width: 100%;
+}
+.product-list li .name{
+	font-size: 12px;
+	color:#ccc;
+}
+.product-list li p{
+	font-size: 12px;
+}
+.product-list li .nowPrice{
+	color:red;
+}
+.product-list li .oldPrice{
+	text-decoration: line-through;
+}
+.product-list li .buy{
+	display: block;
+	width: 80px;
+	height: 30px;
+	line-height: 30px;
+	font-size: 14px;
+	background-color: #006699;
+	border-radius: 3px;
+	color:#fff;
+	margin:0 auto;
+	margin-bottom: 5px;
+}

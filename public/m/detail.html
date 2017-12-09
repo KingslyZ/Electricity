@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>详情页面</title>
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<link rel="stylesheet" href="assets/mui/css/mui.min.css">
+	<link rel="stylesheet" href="assets/mui/css/iconfont.css">
+	<link rel="stylesheet" href="css/base.css">
+	<link rel="stylesheet" href="css/detail.css">
+	<script src="assets/mui/js/mui.min.js"></script>
+	<script src="assets/zepto/zepto.min.js"></script>
+	<script src="assets/artTemplate/template-native.js"></script>
+	<script src="js/common.js"></script>
+	<script src="js/detail.js"></script>
+</head>
+<body>
+	<header class="mui-bar mui-bar-nav my-header">
+		<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+		<h1 class="mui-title">商品详情</h1>
+		<a class="mui-action-back mui-icon mui-icon-search mui-pull-right"></a>
+	</header>
+	<nav class="mui-bar mui-bar-tab my-footer">
+		<a class="mui-tab-item mui-active" href="index.html">
+			<span class="mui-icon mui-icon-home"></span>
+			<span class="mui-tab-label">首页</span>
+		</a>
+		<a class="mui-tab-item" href="category.html">
+			<span class="mui-icon mui-icon-bars"></span>
+			<span class="mui-tab-label">分类</span>
+		</a>
+		<a class="mui-tab-item" href="cart.html">
+			<span class="mui-icon iconfont icon-gouwuche"></span>
+			<span class="mui-tab-label">购物车</span>
+		</a>
+		<a class="mui-tab-item" href="user.html">
+			<span class="mui-icon mui-icon-person"></span>
+			<span class="mui-tab-label">会员中心</span>
+		</a>
+	</nav>
+	<div class="mui-content" id="infoBox">
+		
+	</div>
+
+	<script type="text/html" id="infoTpl">
+		<div class="mui-slider">
+			<div class="mui-slider-group">
+				<% for(var i=0;i<pic.length;i++) {%>
+				<div class="mui-slider-item">
+					<img src="<%=pic[i].picAddr%>" />
+				</div>
+				<% } %>
+			</div>
+		</div>
+		<div class="title">
+			<span>
+				<%=proName%>
+			</span>
+		</div>
+		<div class="priceBox">
+			<span class="price">价格:</span>
+			<span class="nowPrice">￥<%=price%></span>
+			<span class="oldPrice">￥<%=oldPrice%></span>
+		</div>
+		<div class="sizeBox">
+			<span class="name">尺码：</span>
+			<% for(var i=0;i<sizeArr.length;i++) { %>
+			<span class="size"><%=sizeArr[i]%></span>
+			<% } %>
+		</div>
+		<div class="count">
+			<span class="name">数量：</span>
+			<span class="sub">-</span>
+			<input type="number" class="numBox" value="1">
+			<span class="add">+</span>
+			<span>剩余：<%= num%>件</span>
+		</div>
+		<div class="buttons">
+			<a href="cart.html" class="lookCart">查看购物车</a>
+			<span class="intoCart">加入购物车</span>
+		</div>
+	</script>
+</body>
+</html>

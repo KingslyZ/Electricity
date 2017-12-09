@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>搜索列表</title>
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<link rel="stylesheet" href="assets/mui/css/mui.min.css">
+	<link rel="stylesheet" href="assets/mui/css/iconfont.css">
+	<link rel="stylesheet" href="assets/fontAwesome/css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/base.css">
+	<link rel="stylesheet" href="css/search-list.css">
+	<script src="assets/mui/js/mui.min.js"></script>
+	<script src="assets/zepto/zepto.min.js"></script>
+	<script src="assets/artTemplate/template-native.js"></script>
+	<script src="js/common.js"></script>
+	<script src="js/search-list.js"></script>
+</head>
+<body>
+	<header class="mui-bar mui-bar-nav my-header">
+		<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+		<h1 class="mui-title">搜索列表</h1>
+		<a class="mui-action-back mui-icon mui-icon-search mui-pull-right"></a>
+	</header>
+	<nav class="mui-bar mui-bar-tab my-footer">
+		<a class="mui-tab-item mui-active" href="index.html">
+			<span class="mui-icon mui-icon-home"></span>
+			<span class="mui-tab-label">首页</span>
+		</a>
+		<a class="mui-tab-item" href="category.html">
+			<span class="mui-icon mui-icon-bars"></span>
+			<span class="mui-tab-label">分类</span>
+		</a>
+		<a class="mui-tab-item" href="cart.html">
+			<span class="mui-icon iconfont icon-gouwuche"></span>
+			<span class="mui-tab-label">购物车</span>
+		</a>
+		<a class="mui-tab-item" href="user.html">
+			<span class="mui-icon mui-icon-person"></span>
+			<span class="mui-tab-label">会员中心</span>
+		</a>
+	</nav>
+	<div id="my-content">
+		<div>
+			<div class="priceBox">
+				<div class="priceBtn" id="priceBtn">
+					<span>价格</span>
+					<span class="fa fa-angle-down"></span>
+				</div>
+				<div class="saleBtn">
+					<span>销量</span>
+					<span class="fa fa-angle-down"></span>
+				</div>
+			</div>
+			<div>
+				<ul class="product-list" id="productList">
+				</ul>
+			</div>
+		</div>
+	</div>
+	<script type="text/html" id="productTpl">
+		<% for(var i=0;i<data.length;i++) { %>
+		<li>
+			<a href="#" id="all">
+				<img src="<%= data[i].pic[0].picAddr%>">
+				<span class="name">
+					<%= data[i].proName%>
+				</span>
+				<p>
+					<span class="nowPrice">￥<%= data[i].price%></span>
+					<span class="oldPrice">￥<%= data[i].oldPrice%></span>
+				</p>
+				<a class="buy" id="buy" href="detail.html?id=<%= data[i].id%>">立即购买</a>
+			</a>
+		</li>
+		<% } %>
+	</script>
+</body>
+</html>

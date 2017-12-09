@@ -1,0 +1,132 @@
+.mui-content{
+	background-color:#fff;
+}
+img{
+	vertical-align: top;
+}
+/* 导航 */
+.navs{
+	padding: 10px;
+	overflow: hidden;
+}
+.navs a{
+	display: block;
+	width:33.333%;
+	float: left;
+}
+.navs img{
+	width: 100%;
+}
+/* 品牌专区 */
+.brand{
+	padding: 10px;
+}
+.brand .title,
+.life .title{
+	width:100%;
+}
+.brand .title img,
+.life .title img{
+	width:100%;
+}
+.brand .brand-list{
+	list-style: none;
+	overflow: hidden;
+	padding: 0;
+	margin: 0;
+	padding-top: 3px;
+}
+.brand .brand-list li{
+	width: 25%;
+	float:left;
+}
+.brand .brand-list a{
+	display: block;
+	width: 100%;
+}
+.brand .brand-list img{
+	width: 100%;
+}
+/* 运动生活专区 */
+.life{
+	padding: 10px;
+}
+.life .product-list,
+.woman .product-list,
+.man .product-list{
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	padding:10px 0;
+	overflow: hidden;
+}
+.life .product-list li,
+.woman .product-list li,
+.man .product-list li{
+	width: 50%;
+	text-align: center;
+	float: left;
+	padding: 5px;
+}
+.life .product-list li a,
+.woman .product-list li a,
+.man .product-list li a{
+	display: block;
+	width: 100%;
+	box-shadow: 0 0 5px #ccc;
+	padding: 0 5px;
+	overflow: hidden;
+}
+.life .product-list li img,
+.woman .product-list li img,
+.man .product-list li img{
+	width: 100%;
+}
+.life .product-list li .name,
+.woman .product-list li .name,
+.man .product-list li .name{
+	color:#ccc;
+	font-size: 14px;
+}
+.life .product-list li p,
+.woman .product-list li p,
+.man .product-list li p{
+	font-size: 12px;
+}
+.life .product-list li .nowPrice,
+.woman .product-list li .nowPrice,
+.man .product-list li .nowPrice{
+	color:red;
+}
+.life .product-list li .oldPrice,
+.woman .product-list li .oldPrice,
+.man .product-list li .oldPrice{
+	text-decoration: line-through;
+}
+.life .product-list li .buy,
+.woman .product-list li .buy,
+.man .product-list li .buy{
+	display: block;
+	width:80px;
+	height:30px;
+	line-height: 30px;
+	background-color: #006699;
+	border-radius: 3px;
+	color:#fff;
+	font-size: 12px;
+	margin-left: 40px;
+	margin-bottom: 10px;
+}
+
+/* 女士专栏 */
+.woman,.man{
+	padding: 10px;
+}
+.woman .title,
+.man .title{
+	width: 100%;
+}
+.woman .title img,
+.man .title img{
+	width: 100%;
+}

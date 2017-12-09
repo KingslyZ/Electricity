@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script src="assets/zepto/zepto.min.js"></script>
+	<script src="assets/zepto/selector.js"></script>
+	<script src="assets/zepto/fx.js"></script>
+</head>
+<body>
+	<a href="images/title0.png" title="自己的title">文字</a>
+	<script>
+		// 实现自定义title
+		// $("a").on("mouseenter",function(e){
+		// 	//创建div
+		// 	var div = document.createElement("div");
+		// 	$(div).html($(this).attr("title"));
+		// 	$(div).css({
+		// 		'position':'absolute',
+		// 		'top':e.pageY+"px",
+		// 		'left':e.pageX+"px"
+		// 	})
+		// 	$("body").append(div);
+		// 	$(this).removeAttr("title");
+		// }).on("mouseleave",function(){
+		// 	var title = $("div").html();
+		// 	$(this).attr("title",title);
+		// 	$("div").remove();
+		// })
+		$("a").on("mouseenter",function(){
+			var href= $(this).attr("href");
+			var img = document.createElement("img");
+			$(img).attr("src",href);
+			$(img).attr("title",$(this).attr('title'))
+			$("body").append($(img));
+		})
+
+	</script>
+</body>
+</html>

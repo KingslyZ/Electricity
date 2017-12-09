@@ -1,0 +1,48 @@
+/* 登录页面样式 */
+body,.my-content{
+	background-color: #fff;
+	font-size: 14px;
+}
+.free{
+	display: block;
+	padding: 10px 10px;
+	text-align: right;
+	font-size: 14px;
+	color:#006699;
+}
+.my-content .mui-input-group:after {
+	height: 0;
+}
+.mui-content>.mui-table-view:first-child {
+    margin-top: 0px;
+}
+.my-content .mui-table-view:before{
+	height: 0;
+}
+/* 注册页面样式 */
+.getCode{
+	position: absolute;
+	right:10px;
+	top:10px;
+	color:#006699;
+	font-size: 12px;
+}
+/* 会员中心样式 */
+.mui-table-view .mui-table-view-cell a{
+	font-size: 14px;
+}
+.logout{
+	padding-top: 20px;
+	margin-left: 100px;
+}
+.logout span{
+	display: block;
+	width: 120px;
+	height: 30px;
+	line-height: 30px;
+	background-color: #006699;
+	color:#fff;
+	text-align: center;
+	font-size: 14px;
+	border-radius: 3px;
+}

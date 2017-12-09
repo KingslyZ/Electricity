@@ -1,0 +1,21 @@
+$(function(){
+	//使用事件委托
+	$("body").on("tap",".mui-deleteAddress",function(){
+		//获取id
+		var id = $(this).attr("data-id");
+		//误判处理
+		if(confirm("您确认删除吗?")){
+			//删除数据
+			$.ajax({
+				url:"/address/deleteAddress",
+				type:"post",
+				data:{id:id},
+				success:function(result){
+					if(result.success){
+						location.reload();
+					}
+				}
+			})
+		}
+	})
+});
