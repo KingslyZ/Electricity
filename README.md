@@ -105,3 +105,71 @@ before:function(){}
 	对应订单总额变为0
 	
 ## PC端 后台管理
+### 一级分类管理
+循环显示数据
+分页操作
+添加分类操作
+注意：图片信息的获取。调用插件
+	
+```	
+$('#fileUpload').fileupload({
+    dataType: 'json',
+    done: function (e, data) {
+	console.log(data)
+	picAddr = data._response.result.picAddr;
+	$("#showPic").attr("src",picAddr);
+	$("#showPic").css({height:100,width:100});
+    }
+});
+
+```
+
+HTML结构
+```html
+<input type="file" class="form-control" id="fileUpload" data-url="/category/addSecondCategoryPic" name="file" accept="image/jpeg">
+```
+### 二级分类
+循环显示数据
+分页操作
+添加分类操作
+注意：图片信息的获取。调用插件
+```js
+$('#fileUpload').fileupload({
+    dataType: 'json',
+    done: function (e, data) {
+	console.log(data)
+	picAddr = data._response.result.picAddr;
+	$("#showPic").attr("src",picAddr);
+	$("#showPic").css({height:100,width:100});
+    }
+});
+
+```
+
+HTML结构
+```html
+<input type="file" class="form-control" id="fileUpload" data-url="/category/addSecondCategoryPic" name="file" accept="image/jpeg">
+```
+### 产品分类
+循环显示数据
+分页操作
+添加分类操作
+注意：图片信息的获取。调用插件
+```js
+$('#fileUpload').fileupload({
+    dataType: 'json',
+    done: function (e, data) {
+	console.log(data)
+	picAddr = data._response.result.picAddr;
+	$("#showPic").attr("src",picAddr);
+	$("#showPic").css({height:100,width:100});
+    }
+});
+
+```
+
+HTML结构
+```html
+<input type="file" class="form-control" id="fileUpload" data-url="/category/addSecondCategoryPic" name="pic1" accept="image/jpeg">
+```
+注意：多张图片使用数组存放
